@@ -1,14 +1,15 @@
 library(ggplot2)
 library(dplyr)
 library(tidyr)
-
+df <- read.table('/home/nikita/Documents/work/git_projects/GenomeAssembly/first/SISII_df.tsv', sep='\t')
+df
 dat <- read.table(text = "    pos.1 pos.2 pos.pre-ultim pos.ultim
-1   78  78  86  92
-2   58  70  62  66
-3   88 101  95  83
-4   71  64  54  59
-5   68  68  74  78
-6   88  70  80  73",sep = "", header = TRUE)
+1  6  7  9  8
+2 20 21 30 23
+3 10  8  5  7
+4 19 22 15 20
+5 18 23 22 22
+6 13  5  5  6",sep = "", header = TRUE)
 
 total = sum(dat$pos.1)
 total
